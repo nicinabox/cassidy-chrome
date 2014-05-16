@@ -1,0 +1,61 @@
+@import 'compass';
+
+.cassidy-application {
+  position: absolute;
+  min-width: 250px;
+  display: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  line-height: 1.6;
+  font-weight: 300;
+
+  a {
+    text-decoration: none;
+    color: #4A90E2;
+  }
+
+  .cassidy-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom-width: 2px;
+    height: 100%;
+    border-radius: 3px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      &:first-child {
+        a {
+          @include border-top-radius(3px);
+        }
+      }
+
+      a {
+        display: block;
+        padding: 8px 15px;
+        border-bottom: 1px solid #eee;
+        &:hover {
+          background: #fbfbfb;
+        }
+      }
+    }
+  }
+
+  .cassidy-footer {
+    background: #fafafa;
+    @include border-bottom-radius(3px);
+    overflow: hidden;
+
+    a {
+      display: block;
+      padding: 3px 15px;
+      color: #aaa;
+      &:hover {
+        background: #f7f7f7;
+      }
+    }
+  }
+
+}

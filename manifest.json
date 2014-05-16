@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cassidy",
+  "description": "Populate passwords from Cassidy",
+  "version": "0.1.0",
+
+  "permissions": [
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*"],
+      "css": ["application.css"],
+      "js": ["application.js"]
+    }
+  ]
+}
