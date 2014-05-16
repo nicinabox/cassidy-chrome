@@ -9,12 +9,19 @@ class Cassidy
   constructor: ->
     @$fields = $('[type=password]')
     @$el     = $('<div>', class: 'cassidy-application')
-      .html @template(services: data)
 
     @bindEvents()
+
+    # Auth with dropbox via options page
+    # Store Phrase on options page
+    # Find matching services for current domain
+    # On click, create password, insert into field
+
     @attachElement()
 
   attachElement: ->
+    @$el.html @template services: data
+
     @$fields.each (i, field) =>
       $field = $(field)
       offset = $field.offset()
